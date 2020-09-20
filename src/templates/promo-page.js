@@ -22,11 +22,14 @@ export const PromoPageTemplate = ({ title, content, contentComponent }) => {
 const PromoPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
+  console.log(data);
+
   return (
     <Layout_Promo>
       <PromoPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        content={post.html}
       />
     </Layout_Promo>
   );
