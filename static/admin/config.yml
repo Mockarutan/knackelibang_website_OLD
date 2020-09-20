@@ -12,20 +12,14 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "blog-post",
-        }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
-      - { label: "Featured Image", name: "featuredimage", widget: image }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list", required: true }
-
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
+      - {label: "Featured Image", name: "featuredimage", widget: image}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list", required: true}
   - name: "pages"
     label: "Pages"
     files:
@@ -69,6 +63,25 @@ collections:
               default: "game-page",
             }
           - { label: "Body", name: "body", widget: "markdown" }
+
+      - file: "src/pages/promo/index.md"
+        label: "Just Read The Instructions"
+        name: "just_read_the_instructions"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "promo-page",
+            }
+          - {
+              label: Mainpitch,
+              name: mainpitch,
+              widget: object,
+            fields: [{ label: Title, name: title, widget: string }],
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+      
 
   - name: "settings"
     label: "Settings"
