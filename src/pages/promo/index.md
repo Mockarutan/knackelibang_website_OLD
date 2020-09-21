@@ -11,10 +11,10 @@ mainpitch:
 >
 > Aspire not to die, good luck.
 
-**2. Sign up for our new letters, shame us on twitter if we spam you**
+**2. Sign up for our new letters** (shame us on twitter if we spam you)
 
 **3. Follow @JustReadTheInstructions on twitter**
 
-**4. Look at these pleasant picture depicting the game**
+**4. Look at these pleasant pictures depicting the game**
 
 **5. Await further instructions and don't drown in a pool**
