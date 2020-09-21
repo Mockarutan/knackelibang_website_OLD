@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import Layout_Promo from "../components/Layout-Promo";
 import Content, { HTMLContent } from "../components/Content";
 import Background from "../../static/img/promo_bg_02.png";
-import Title from "../../static/img/JRTI_logo_WIP07.png";
+import Title from "../../static/img/JRTI_logo_WIP08.png";
 import Navbar from "../components/Navbar";
 
 export const PromoPageTemplate = ({ title, content, contentComponent }) => {
@@ -17,7 +17,6 @@ export const PromoPageTemplate = ({ title, content, contentComponent }) => {
           <img src={Title} alt="" />
         </div>
       </section>
-      <Navbar overrideClass={"navbarPromo"} />
       <PageContent className="contentPromoPage" content={content} />
     </>
   );

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto%27')
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap')
+//@import url('https://fonts.googleapis.com/css?family=Roboto%27')
+//@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap')
 
 // Knackelibang Colors:
 $background-color: #363636 // #161616// #545454 //#2b2523 // #848484 // #403d49
@@ -7,6 +7,9 @@ $primary: #dcdcdc
 $primary-invert: #65aadb
 $dark: #2b2523 //#848484 //#b3b3b3
 $light: #dcdcdc
+$logo_black: #010d12
+$logo_white: #b7c2cb
+$logo_blue: #0a75a3
 
 // General
 $mainWidth: 1200px
@@ -25,7 +28,8 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video
-  font-family: 'Roboto', 'Open Sans', sans-serif //'VT323', monospace,
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif
+  //font-family: 'Roboto', 'Open Sans', sans-serif //'VT323', monospace,
   font-size: 100%
   border: 0
   margin: 0
@@ -394,12 +398,19 @@ footer .copyright
     margin-top: -20px
 
 .contentPromoPage
+  margin-top: -34px
   width: 100%
   max-width: $mainWidth
   padding: 24px 36px
   background-color: $primary
   text-align: left
   box-sizing: border-box
+  color: $logo_black
+
+.contentPromoPage a
+  color: $logo_blue
+.contentPromoPage a:hover
+  color: $logo_black
 
 .promoArtContainer
   
@@ -407,10 +418,15 @@ footer .copyright
   img
     position: absolute
     top: 50%
-    left: 51%
+    left: 50%
     max-width: 44%
     height: auto
     transform: translate(-50%, 90%)
+
+input
+  padding: 8px
+  outline: none
+  border: 1px solid rgba(0,0,0,.12)
 
 //   // Helper Classes
 // .full-width-image-container

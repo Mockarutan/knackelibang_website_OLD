@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Knackelibang',
     description:
-      'Knackelibang Games',
+      'Knackelibang Productions',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
