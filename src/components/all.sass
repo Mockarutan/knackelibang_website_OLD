@@ -379,6 +379,7 @@ footer .copyright
 
     section
       width: 100%
+      margin-bottom: 16px
 
     img 
       object-fit: cover
@@ -398,6 +399,7 @@ footer .copyright
     margin-top: -20px
 
 .contentPromoPage
+  z-index: 20
   margin-top: -34px
   width: 100%
   max-width: $mainWidth
@@ -413,20 +415,34 @@ footer .copyright
   color: $logo_black
 
 .promoArtContainer
-  
-.titleImage
-  img
+  position: relative
+
+  .titleImage
     position: absolute
     top: 50%
     left: 50%
     max-width: 44%
     height: auto
     transform: translate(-50%, 90%)
+  
+.promoContentGrid
+  display: grid
+  grid-template-rows: auto
+  grid-template-columns: 48% 48%
+  column-gap: 2%
+  row-gap: 10px
 
-input
-  padding: 8px
-  outline: none
-  border: 1px solid rgba(0,0,0,.12)
+  
+  // img
+  //   margin-bottom: 
+
+  @media screen and ( min-width: $large)
+    grid-template-columns: 31% 31% 31%
+    column-gap: 3%
+    row-gap: 20px
+
+
+  
 
 //   // Helper Classes
 // .full-width-image-container

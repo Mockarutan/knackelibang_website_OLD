@@ -5,6 +5,7 @@ import Content, { HTMLContent } from "../components/Content";
 import Background from "../../static/img/promo_bg_02.png";
 import Title from "../../static/img/JRTI_logo_WIP08.png";
 import Navbar from "../components/Navbar";
+import PromoContent from "./promo-content";
 
 export const PromoPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
@@ -13,11 +14,11 @@ export const PromoPageTemplate = ({ title, content, contentComponent }) => {
     <>
       <section className="promoArtContainer">
         <img src={Background} alt="" />
-        <div className="titleImage">
-          <img src={Title} alt="" />
-        </div>
+        <img className="titleImage" src={Title} alt="" />
       </section>
-      <PageContent className="contentPromoPage" content={content} />
+      <section className="contentPromoPage">
+        <PromoContent />
+      </section>
     </>
   );
 };
