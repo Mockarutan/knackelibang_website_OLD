@@ -409,6 +409,51 @@ footer .copyright
   box-sizing: border-box
   color: $logo_black
 
+  .instructionPoint
+    font-size: 1.5rem
+
+  .shameNote
+    margin-top: -0.5em
+    margin-left: 1.8em
+
+  Input
+    font-size: 1em
+    margin-left: 1.8em
+    padding: 0.9em
+    width: 12em
+    border: 1px solid rgba(0,0,0,.12)
+    
+  Input[type=submit]
+
+    color: $dark
+    font-style: inherit
+    font-weight: bold;
+    text-decoration: none
+    -webkit-border-radius: 4px
+    -moz-border-radius: 4px
+    border-radius: 4px
+    border-width: 3px
+    border-color: $dark
+    background-color: $primary
+    display: inline-block
+    cursor: pointer
+    text-align: center
+
+    margin-left: 1em
+    padding: 0.75em
+    width: 6em
+    
+  Input[type=submit]:hover
+    background: $dark
+    color: $light
+  
+  .gameDescriptionShort
+    margin-left: 1.6em
+    font-size: 1.15em
+
+    .gameDestTitle
+      font-size: 0.94em
+
 .contentPromoPage a
   color: $logo_blue
 .contentPromoPage a:hover
@@ -426,10 +471,11 @@ footer .copyright
     transform: translate(-50%, 90%)
   
 .promoContentGrid
+  margin-left: 1.6em
   display: grid
   grid-template-rows: auto
   grid-template-columns: 48% 48%
-  column-gap: 2%
+  column-gap: 1.5%
   row-gap: 10px
 
   
@@ -438,10 +484,8 @@ footer .copyright
 
   @media screen and ( min-width: $large)
     grid-template-columns: 31% 31% 31%
-    column-gap: 3%
+    column-gap: 2%
     row-gap: 20px
-
-
   
 
 //   // Helper Classes
