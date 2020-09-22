@@ -5,7 +5,7 @@ import Content, { HTMLContent } from "../components/Content";
 import Background from "../../static/img/promo_bg_02.png";
 import Title from "../../static/img/JRTI_logo_WIP08.png";
 import Navbar from "../components/Navbar";
-import PromoContent from "./promo-content";
+import PromoContent from "../pages/promo/promo-content";
 
 export const PromoPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;

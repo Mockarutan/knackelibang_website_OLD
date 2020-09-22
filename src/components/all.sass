@@ -400,10 +400,10 @@ footer .copyright
 
 .contentPromoPage
   z-index: 20
-  margin-top: -34px
+  margin-top: -60px
   width: 100%
   max-width: $mainWidth
-  padding: 24px 36px
+  padding: 70px 80px
   background-color: $primary
   text-align: left
   box-sizing: border-box
@@ -413,14 +413,14 @@ footer .copyright
     font-size: 1.5rem
 
   .shameNote
-    margin-top: -0.5em
-    margin-left: 1.8em
+    margin-top: -0.4em
+    margin-left: 2em
 
   Input
     font-size: 1em
     margin-left: 1.8em
     padding: 0.9em
-    width: 12em
+    width: 15em
     border: 1px solid rgba(0,0,0,.12)
     
   Input[type=submit]
@@ -450,9 +450,40 @@ footer .copyright
   .gameDescriptionShort
     margin-left: 1.6em
     font-size: 1.15em
+    width: 30.2em
 
     .gameDestTitle
       font-size: 0.94em
+
+  .promoContentFootImage
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+
+  .twitterIconInstructions
+    fill: $dark
+    background: $light
+    position: relative
+    width: 82%
+    height: auto
+    margin: -0.18em
+    padding: 0.435em
+    border-radius: 0.3em
+    
+  .twitterIconInstructionsFrame
+    background: $dark
+    width: 46px
+    height: 46px
+    float: left
+    position: relative
+    margin-left: 1.8em
+    padding: 0.37em
+    border-radius: 0.4em
+
+  .twitterIconInstructions:hover
+    fill: $light
+    background: $dark
 
 .contentPromoPage a
   color: $logo_blue
@@ -471,13 +502,12 @@ footer .copyright
     transform: translate(-50%, 90%)
   
 .promoContentGrid
-  margin-left: 1.6em
+  margin-left: 1.8em
   display: grid
   grid-template-rows: auto
   grid-template-columns: 48% 48%
   column-gap: 1.5%
   row-gap: 10px
-
   
   // img
   //   margin-bottom: 
