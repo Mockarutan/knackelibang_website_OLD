@@ -1,10 +1,16 @@
 import React from "react";
+import { Link } from "gatsby";
+import addToMailchimp from 'gatsby-plugin-mailchimp';
+import ReactModal from 'react-modal'
 
 //const PromoContent = ({ data }) => {
 export default class PromoContent extends React.Component {
   
   state = {
     email: "",
+    modelOpen: false,
+    emailRegSuccess: false,
+    emailRegMsg: "",
   }
 
   handleInputChange = event => {
@@ -18,13 +24,57 @@ export default class PromoContent extends React.Component {
   
   handleSubmit = event => {
     event.preventDefault()
-    
-    alert(`Request Confirmed!`)
+    addToMailchimp(this.state.email)
+      .then(data => {
+
+        this.setState({ modelOpen: true })
+        this.setState({ emailRegMsg: data.msg })
+
+        if (data.result == "error")
+        {
+          this.setState({ emailRegSuccess: false })
+        }
+        else
+        {
+          this.setState({ emailRegSuccess: true })
+        }
+      })
+      .catch(() =>{
+
+      })
+  }
+
+  handleModalClose = event => {
+    this.setState({ modelOpen: false })
   }
 
   render () {
+
+    var showModalClassName = this.state.modelOpen ? "openSignUpConfirmModal" : "closedSignUpConfirmModal"
+    var title = this.state.emailRegSuccess ? "More instructions!" : "There was an error"
+    var msg = this.state.emailRegSuccess ? "2.5 An confirmation email has been dispached, please confirm your sign up" : this.state.emailRegMsg
+
     return ( 
-      <> 
+      <>
+        <div className="openSignUpConfirmModalRoot">
+          <div 
+            className={showModalClassName}
+            //={this.state.modelOpen}
+            onRequestClose={this.handleModalClose}
+            contentLabel="Example Modal In Gatsby"
+          >
+            <h3>{msg}</h3>
+            <br />
+            <Link className="closeButton" onClick={ (event) =>
+              {
+                this.handleModalClose()
+                event.preventDefault()}
+              }>
+              Close
+            </Link>
+           </div>
+        </div>
+
         <h3 className="instructionPoint">1. Read this</h3>
         <p className="gameDescriptionShort">
           <b className="gameDestTitle">JUST READ THE INSTRUCTIONS</b> is a co-op first person shooter game where the only thing that matters is
