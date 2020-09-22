@@ -50,13 +50,14 @@ export default class PromoContent extends React.Component {
 
   render () {
 
+    var showModalRootClassName = this.state.modelOpen ? "openSignUpConfirmModalRoot" : "closedSignUpConfirmModalRoot"
     var showModalClassName = this.state.modelOpen ? "openSignUpConfirmModal" : "closedSignUpConfirmModal"
     var title = this.state.emailRegSuccess ? "More instructions!" : "There was an error"
     var msg = this.state.emailRegSuccess ? "2.5 An confirmation email has been dispached, please confirm your sign up" : this.state.emailRegMsg
 
     return ( 
       <>
-        <div className="openSignUpConfirmModalRoot">
+        <div className={showModalRootClassName}>
           <div 
             className={showModalClassName}
             //={this.state.modelOpen}
