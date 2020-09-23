@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import github from "../img/github-icon.svg";
+import Small_Logo from "../../static/img/JRTI_Simple_Logo.png"
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -48,6 +49,7 @@ const Navbar = class extends React.Component {
       >
         <div className="menuItems">
           <Link className="navbar-item" to="/promo">
+            <img src={Small_Logo} className="jrti_small_logo" />
             Just Read The Instructions
           </Link>
           <Link className="navbar-item" to="/">

@@ -79,7 +79,7 @@ export default class PromoContent extends React.Component {
         <h3 className="instructionPoint">1. Read this</h3>
         <p className="gameDescriptionShort">
           <b className="gameDestTitle">JUST READ THE INSTRUCTIONS</b> is a co-op first person shooter game where the only thing that matters is
-          the next set of instructions and you following them. Enemies will flood
+          following the next set of instructions. Enemies will flood
           the scene, your weapons will break, more instructions will come, and then
           repeat.
           <br />
@@ -121,20 +121,38 @@ export default class PromoContent extends React.Component {
 
         <h3 className="instructionPoint">4. Look at these pleasant pictures depicting the game</h3>
         <section className="promoContentGrid">
-          <a href="/img/Screenshot_01.png">
-            <img src="/img/Screenshot_01.png" alt="" />
+          <a href="/img/Screenshots/Screenshot_01.png">
+            <img src="/img/Screenshots/Screenshot_01.png" alt="" />
           </a>
-          <a href="/img/Screenshot_02.png">
-            <img src="/img/Screenshot_02.png" alt="" />
+          <a href="/img/Screenshots/Screenshot_02.png">
+            <img src="/img/Screenshots/Screenshot_02.png" alt="" />
           </a>
-          <a href="/img/Screenshot_03.png">
-            <img src="/img/Screenshot_03.png" alt="" />
+          <a href="/img/Screenshots/Screenshot_03.png">
+            <img src="/img/Screenshots/Screenshot_03.png" alt="" />
+          </a>
+          <a href="/img/Screenshots/Screenshot_04.png">
+            <img src="/img/Screenshots/Screenshot_04.png" alt="" />
+          </a>
+          <a href="/img/Screenshots/Screenshot_05.png">
+            <img src="/img/Screenshots/Screenshot_05.png" alt="" />
+          </a>
+          <a href="/img/Screenshots/Screenshot_06.png">
+            <img src="/img/Screenshots/Screenshot_06.png" alt="" />
+          </a>
+          <a href="/img/Screenshots/Screenshot_07.png">
+            <img src="/img/Screenshots/Screenshot_07.png" alt="" />
+          </a>
+          <a href="/img/Screenshots/Screenshot_08.png">
+            <img src="/img/Screenshots/Screenshot_08.png" alt="" />
+          </a>
+          <a href="/img/Screenshots/Screenshot_09.png">
+            <img src="/img/Screenshots/Screenshot_09.png" alt="" />
           </a>
         </section>
         <br />
         <br />
 
-        <h3 className="instructionPoint">5. Await further instructions and don't drown in a pool</h3>
+        <h3 className="instructionPoint">5. Await further instructions and don't fall of a cliff</h3>
 
         <br />
         <br />
