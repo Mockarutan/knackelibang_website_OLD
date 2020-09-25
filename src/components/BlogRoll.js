@@ -27,7 +27,7 @@ class BlogRoll extends React.Component {
                 {post.frontmatter.tags && post.frontmatter.tags.length ? (
               <div>
                 <div className="tagList">
-                  Tags: 
+                  <b>Tags: </b> 
                   {post.frontmatter.tags.map(tag => (
                       <Link key={tag} to={`/tags/${kebabCase(tag)}/`}>{tag}, </Link>
                   ))}
