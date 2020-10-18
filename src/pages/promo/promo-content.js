@@ -78,7 +78,7 @@ export default class PromoContent extends React.Component {
 
         <h3 className="instructionPoint">1. Read this</h3>
         <p className="gameDescriptionShort">
-          <b className="gameDestTitle">JUST READ THE INSTRUCTIONS</b> is a co-op first person shooter game where the only thing that matters is
+          <b className="gameDestTitle">JUST READ THE INSTRUCTIONS</b> is a surreal co-op first person shooter game where the only thing that matters is
           following the next set of instructions. Enemies will flood
           the scene, your weapons will break, more instructions will come, and then
           repeat.
